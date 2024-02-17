@@ -279,43 +279,96 @@ button {
 } */
 .flex_carList_first{
   background-color: antiquewhite;
+  width: 100%;
+  height: calc(870px/3);
 }
 .flex_carList_second{
   background-color: rgb(87, 25, 128);
+  width: 100%;
+  height: calc(870px/3);
 }
 .flex_carList_third{
   background-color: rgb(116, 91, 59);
+  width: 100%;
+  height: calc(870px/3);
 }
 .carList{
   display: flex;
   /* flex-grow: 1; */
 }
+.carList a{
+  flex-grow: 1;
+  margin: 0;
+  /* padding: 0; */
+}
 .carList img{
   width: 100%;
   height: 100%;
-  
+  object-fit: cover;
 }
 .big_stock_list .button{
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: 890px;
+  left: 50%;
+  /* transform: translateX(-50%); */
 }
 .big_stock_list .button a{
   border:3px solid black; 
-  margin: 30px;
+  margin-top: 15px;
   padding: 20px;
+  color: black;
 }
-.big_blog{
-  background-color: rgb(201, 36, 36);
-  /* position: relative; */
-  bottom: 60px;
-  /* width: 100%;
+
+
+.back_white{
+  background-color: rgb(228, 198, 198);
+  width: 100%;
   height: 1000px;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
+.blog_list_content{
+  max-width: 1200px;
   display: flex;
   flex-flow: column;
-  align-items: center; */
+}
+.sentence h1{
+  padding: 30px;
 }
 
-
+.blog_list{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 50px 0;
+}
+.blog_list_detail{
+  display: flex;
+}
+.blog_list_detail a{
+  padding: 0;
+  margin: 0;
+  background-color: aqua;
+}
+.blog_list_detail a img{
+  padding: 10px;
+  width: 100%;
+  /* height: 100%; */
+  box-sizing: border-box;
+}
+.blog_list_content .button{
+  margin: 0;
+}
+.blog_list_content .button a{
+  padding: 20px;
+  border: 3px solid black;
+  color: black;
+}
 
 
 @media screen and (max-width: 600px) {
