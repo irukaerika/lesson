@@ -15,6 +15,7 @@
 body{
   background-color: rgb(212, 226, 57);
   font-family: Arial, "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", 游ゴシック, YuGothic, メイリオ, Meiryo, sans-serif;
+  overflow-x: hidden;
 }
 video{
   height: 800px;
@@ -369,6 +370,158 @@ button {
   border: 3px solid black;
   color: black;
 }
+/* footer{
+  position: relative;
+  bottom: 60px;
+  height: 3000px;
+  color: white;
+  background-color: rgb(58, 69, 142);
+} */
+.footer_1{
+  position: relative;
+  bottom: 60px;
+  display: flex;
+  background-color: rgb(221, 218, 67);
+  flex-flow: row; 
+  height: 600px;
+}
+.footer_1 a{
+  margin: 0;
+}
+.footer_1 a img{
+  width: 100%;
+  /* height: 300px; */
+}
+.flex_grow{
+  flex-grow: 1;
+  background-color: black;
+  /* display: block; */
+}
+.flex_grow div{
+  background-color: black;
+  border: 0px 1px;
+  border-color:white;
+  /* border-style: solid; */
+}
+
+.info{
+  display: flex;
+  width: 100%;
+  position: relative;
+  bottom: 60px;
+  background-color: white;
+  color: black;
+  flex-flow: column; 
+  align-items: center;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 70px 0 65px 0;
+}
+.info img{
+ width: 10%;
+}
+.sns{
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+.sns a img{
+  width: 15px;
+  height: 15px;
+  margin: 8px;
+}
+.footer_nav{
+  position: relative;
+  bottom: 60px;
+  width: 100%;
+  background-color: azure;
+  /* height: 140px; */
+}
+#nav-pc {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  background-color: blue;
+}
+#nav-pc a{
+  color: white;
+}
+.copyrght{
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  background-color: aquamarine;
+}
+
+/* .parallax-window {
+  min-height: 600px;
+  background: transparent;
+}  */
+
+#side_menu{
+  width: 80px;
+  height: 240px;
+  position: fixed;
+  top: 280px;
+  left: 0;
+  /* z-index: 100; */
+  background-color: rgb(207, 11, 11);
+  border: 1.2px solid white;
+}
+#side_menu a div{
+  width: 80px;
+  height: 80px;
+  background-color: rgb(36, 226, 55);
+  color: white;
+  border: 1px solid white;
+  /* z-index: 100; */
+}
+
+
+
+/* .blog_list:nth-child(1){
+  margin-bottom:20px
+} */
+.blog_list_detail{
+  /* background-color: blueviolet;
+  width: 100%;
+  height: 100%;
+  display: flex; */
+}
+.blog_list_detail:nth-child(2){
+  /* margin-top: 20px; */
+}
+.blog_list_detail img{
+  /* width: 100%;
+  height: 100%; */
+  /* margin: 10px; */
+}
+.blog_list_detail a:nth-child(2){
+  /* width: 100%;
+  height: 100%; */
+  /* margin: 0 20px; */
+}
+
+.big_blog{
+  /* background-color: rgb(201, 36, 36);
+  text-align: center;
+  position: relative;
+  bottom: 60px; */
+  /* width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-flow: column;
+  align-items: center; */
+}
+/* .blog_list_content{
+  max-width: 1200px;
+  height: 1000px;
+  background-color: rgb(179, 121, 46);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+} */ */
+
 
 
 @media screen and (max-width: 600px) {
