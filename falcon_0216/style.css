@@ -1,7 +1,7 @@
 /*
  Theme Name: FALCON
  Theme URI: https://www.sejuku.net/
- Description: SAMURAI ENGINEERのWordPress教材
+ Description: 塚澤栄里香のWordPress教材
  Version: 1.0.0
  Author: SAMURAI ENGINEER
  Author URI: https://www.sejuku.net/
@@ -13,9 +13,47 @@
   list-style: none;
 }
 body{
-  background-color: rgb(212, 226, 57);
+  background-color: rgb(234, 104, 71);
   font-family: Arial, "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", 游ゴシック, YuGothic, メイリオ, Meiryo, sans-serif;
   overflow-x: hidden;
+  position:relative;
+}
+
+header{
+  position: fixed;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  /* opacity: 0.8; */
+  background-color: rgba(0,0,0,.5);
+  height: 80px;
+  /* top: 0; */
+  z-index: 2;
+}
+#nav-pc{
+  display: flex;
+  align-items: center;
+}
+header a{
+  color: white;
+}
+header:hover{
+  color: gray;
+  background: rgba(0,0,0,1);
+}
+header a:hover{
+  color: gray;
+}
+
+#nav-pc a{
+  padding: 0 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
 }
 video{
   height: 800px;
@@ -63,12 +101,23 @@ a{
   height: calc(600px * 0.5625);
   background-color: cadetblue;
   margin-right: 30px;
+  position: relative;
 }
 .carousel-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+.box{
+  background-color: aquamarine;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+}
+
 .arow-wrap {
   width: 90%;
   background-color: antiquewhite;
@@ -300,20 +349,44 @@ button {
 .carList a{
   flex-grow: 1;
   margin: 0;
-  /* padding: 0; */
+  overflow: hidden;
+  position: relative;
 }
 .carList img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition-duration: 0.6s; 
 }
+.carList img:hover{
+  transform: scale(1.2,1.2);
+  transition-duration: 0.6s; 
+}
+.carList img:hover~.car_name{
+  transition-duration: 0.6s; 
+  /* transform: translateY(-70px); */
+  transform: translateY(-100%);
+}
+.car_name{
+  background-color: black;
+  color: white;
+  /* position: absolute;
+  bottom: 0; */
+  width: 100%;
+  height: 25%;
+  transition-duration: 0.6s; 
+  opacity: 1;
+}
+.car_name p{
+  padding: 18px;
+}
+
 .big_stock_list .button{
   display: flex;
   justify-content: center;
   position: absolute;
   top: 890px;
   left: 50%;
-  /* transform: translateX(-50%); */
 }
 .big_stock_list .button a{
   border:3px solid black; 
@@ -355,12 +428,18 @@ button {
   padding: 0;
   margin: 0;
   background-color: aqua;
+  overflow: hidden;
 }
 .blog_list_detail a img{
   padding: 10px;
   width: 100%;
   /* height: 100%; */
   box-sizing: border-box;
+  transition-duration: 0.6s; 
+}
+.blog_list_detail a img:hover{
+  transform: scale(1.2,1.2);
+  transition-duration: 0.6s; 
 }
 .blog_list_content .button{
   margin: 0;
@@ -370,45 +449,53 @@ button {
   border: 3px solid black;
   color: black;
 }
-/* footer{
-  position: relative;
-  bottom: 60px;
-  height: 3000px;
-  color: white;
-  background-color: rgb(58, 69, 142);
-} */
+
+
+footer{
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  margin-top: -60px;
+  margin-bottom: -60px;
+  background-color: rgb(233, 227, 58);
+}
 .footer_1{
   position: relative;
-  bottom: 60px;
+  /* bottom: 60px; */
   display: flex;
   background-color: rgb(221, 218, 67);
-  flex-flow: row; 
   height: 600px;
 }
 .footer_1 a{
   margin: 0;
+  flex-grow: 1;
+  height: 600px;
+  overflow: hidden;
+  background-color: black;
 }
 .footer_1 a img{
   width: 100%;
-  /* height: 300px; */
+  height: 300px;
+  object-fit: cover;
+  transition-duration: 0.6s; 
 }
-.flex_grow{
-  flex-grow: 1;
-  background-color: black;
-  /* display: block; */
+.flex_grow:hover img{
+  transform: scale(1.2,1.2);
+  transition-duration: 0.6s; 
 }
-.flex_grow div{
+.footer_content{
+  position: absolute;
   background-color: black;
-  border: 0px 1px;
-  border-color:white;
-  /* border-style: solid; */
+  width: 100%;
+  height: 300px;
+  color: white;
 }
 
 .info{
   display: flex;
   width: 100%;
   position: relative;
-  bottom: 60px;
+  /* bottom: 60px; */
   background-color: white;
   color: black;
   flex-flow: column; 
@@ -432,7 +519,7 @@ button {
 }
 .footer_nav{
   position: relative;
-  bottom: 60px;
+  /* bottom: 60px; */
   width: 100%;
   background-color: azure;
   /* height: 140px; */
@@ -521,8 +608,6 @@ button {
   flex-flow: column;
   align-items: center;
 } */ */
-
-
 
 @media screen and (max-width: 600px) {
   .carousel-area {
