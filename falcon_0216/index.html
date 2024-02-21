@@ -7,7 +7,22 @@
   <title>Document</title>
 </head>
 <body>
-  <video src="video/falcon.mp4" autoplay muted loop playsinline width="100%">
+  <header id="flexBox" class="header">
+    <a href="index.html">
+      <div>FALCON</div>
+    </a>
+    <nav id="nav-pc">
+      <a href="#">HOME</a>
+      <a href="#">SERVICE</a>
+      <a href="#">STOCK LIST</a>
+      <a href="#">NEWS</a>
+      <a href="#">BLOG</a>
+      <a href="#">SHOP</a>
+      <a href="#">DOWNLOAD</a>
+    </nav>
+      <a href="#">検索マーク</a>
+  </header>
+  <video src="../../video/falcon.mp4" autoplay muted loop playsinline width="100%">
   </video>
   <article class="video_bottom_bar">
       <time>2021.06.15</time> 
@@ -15,19 +30,22 @@
   </article>
   <section class="carousel">
     <ul class="carousel-area">
-      <li class="carousel-list"><img class="carousel-img" src="images/s_4.jpg" alt="ハムスターの画像"></li>
-      <li class="carousel-list"><img class="carousel-img" src="images/s_5.jpg" alt="羊の画像"></li>
-      <li class="carousel-list"><img class="carousel-img" src="images/s_1.jpg" alt="亀の画像"></li>
-      <li class="carousel-list"><img class="carousel-img" src="images/s_2.jpg" alt="鳥の画像"></li>
-      <li class="carousel-list"><img class="carousel-img" src="images/s_3.jpg" alt="ライオンの画像"></li>
+      <li class="carousel-list">
+        <img class="carousel-img" src="../../images/s_4.jpg" alt="">
+        <div class="box"></div>
+      </li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_5.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_1.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_2.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_3.jpg" alt=""></li>
     </ul>
-    <!-- <div class="carousel">
-      <div class="d-demo__item"><img class="slide slide1"  src="../../images/s_4.jpg" alt=""></div>
-      <div class="d-demo__item"><img class="slide slide2"  src="../../images/s_5.jpg" alt=""></div>
-      <div class="d-demo__item"><img class="slide slide3"  src="../../images/s_1.jpg" alt=""></div>
-      <div class="d-demo__item"><img class="slide slide4"  src="../../images/s_2.jpg" alt=""></div>
-      <div class="d-demo__item"><img class="slide slide4"  src="../../images/s_3.jpg" alt=""></div>
-    </div> -->
+    <!-- <ul class="carousel-area">
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_4.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_5.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_1.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_2.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_3.jpg" alt=""></li>
+    </ul> -->
     <div class="arow-wrap">
       <div class="arrow-left">
         <button class="arrow-btn js-btn-back" type="button"></button>
@@ -79,19 +97,46 @@
   </section>
   <section class="big_stock_list">
     <div class="flex_carList_first carList">
-      <a href=""><img src="images/beetle-1.jpg" alt=""></a>
-      <a href=""><img src="images/austin-green-1.jpg" alt=""></a>
-      <a href=""><img src="images/mk2-1-752x468.jpg" alt=""></a>
+      <a href="">
+        <img src="../../images/beetle-1.jpg" alt="">
+        <div class="car_name"><p>Volkswagen Beetle</p></div>
+      </a>
+      <a href="">
+        <img src="../../images/austin-green-1.jpg" alt="">
+        <div class="car_name"><p>Austin-Healey 3000 MkⅢ</p></div>
+      </a>
+      <a href="">
+        <img src="../../images/mk2-1-752x468.jpg" alt="">
+        <div class="car_name"><p>Jaguar Mk2</p></div>
+      </a>
     </div>
     <div class="flex_carList_second carList">
-      <a href=""><img src="images/falcon-1-752x468.jpg" alt=""></a>
-      <a href=""><img src="images/s2-1.jpg" alt=""></a>
-      <a href=""><img src="images/ontinental-1947-1-752x468.jpg" alt=""></a>
+      <a href="">
+        <img src="../../images/falcon-1-752x468.jpg" alt="">
+        <div class="car_name"><p>Ford Falcon</p></div>
+      </a>
+      <a href="">
+        <img src="../../images/s2-1.jpg" alt="">
+        <div class="car_name"><p>Bentley S2</p></div>
+      </a>
+      <a href="">
+        <img src="../../images/ontinental-1947-1-752x468.jpg" alt="">
+        <div class="car_name"><p>Lincoln Continental 1947</p></div>
+      </a>
     </div>
     <div class="flex_carList_third carList">
-      <a href=""><img src="images/mark-v-1.jpg" alt=""></a>
-      <a href=""><img src="images/600-1-752x468.jpg" alt=""></a>
-      <a href=""><img src="images/190sl-1-752x468.jpg" alt=""></a>
+      <a href="">
+        <img src="../../images/mark-v-1.jpg" alt="">
+        <div class="car_name"><p>Lincoln Mark V</p></div>
+      </a>
+      <a href="">
+        <img src="../../images/600-1-752x468.jpg" alt="">
+        <div class="car_name"><p>Mercedes-Benz 600</p></div>
+      </a>
+      <a href="">
+        <img src="../../images/190sl-1-752x468.jpg" alt="">
+        <div class="car_name"><p>Mercedes-Benz 190SL</p></div>
+      </a>
     </div>
     <div class="button">
       <a href="#">STOCK LIST</a>
@@ -127,17 +172,17 @@
           <!-- <a href="#"></a>
           <a href="#"></a>
           <a href="#"></a> -->
-          <a href="#"><img src="images/blog_news-41-752x468.jpg" alt=""></a>
-          <a href="#"><img src="images/blog_news-34-752x468.jpg" alt=""></a>
-          <a href="#"><img src="images/blog_news-35-752x468.jpg" alt=""></a>
+          <a href="#"><img src="../../images/blog_news-41-752x468.jpg" alt=""></a>
+          <a href="#"><img src="../../images/blog_news-34-752x468.jpg" alt=""></a>
+          <a href="#"><img src="../../images/blog_news-35-752x468.jpg" alt=""></a>
         </div>
         <div class="blog_list_detail">
           <!-- <a href="#"></a>
           <a href="#"></a>
           <a href="#"></a> -->
-          <a href="#"><img src="images/blog_news-9-752x468.jpg" alt=""></a>
-          <a href="#"><img src="images/blog_news-48-752x468.jpg" alt=""></a>
-          <a href="#"><img src="images/blog_news-2-752x468.jpg" alt=""></a>
+          <a href="#"><img src="../../images/blog_news-9-752x468.jpg" alt=""></a>
+          <a href="#"><img src="../../images/blog_news-48-752x468.jpg" alt=""></a>
+          <a href="#"><img src="../../images/blog_news-2-752x468.jpg" alt=""></a>
         </div>
       </div>
       <div class="button">
@@ -150,12 +195,15 @@
     <section class="footer_1">
       <a href="#" class="flex_grow">
         <img src="images/footer_1.jpg" alt="">
-        <p>STOCK LIST</p>
-        <p>在庫リスト</p>
+        <div class="footer_content">
+          <p>STOCK LIST</p>
+          <p>在庫リスト</p>
+        </div>
+
       </a>
       <a href="#" class="flex_grow">
         <img src="images/footer_2.jpg" alt="">
-        <div>
+        <div class="footer_content">
           <p>SERVICE</p>
           <p>サービス</p>
         </div>
@@ -163,8 +211,10 @@
       </a>
       <a href="#" class="flex_grow">
         <img src="images/footer_3.jpg" alt="">
-        <p>CONTACT</p>
-        <p>お問い合わせ・お見積り</p>
+        <div class="footer_content">
+          <p>CONTACT</p>
+          <p>お問い合わせ・お見積り</p>
+        </div>
       </a>
     </section>
     <section class="info">
@@ -188,7 +238,7 @@
         <a href="#"><img src="sns/rss.png"></a>
       </div>
     </section>
-      <footer class="footer_nav" id="flexBox">
+      <div class="footer_nav" id="flexBox">
         <nav id="nav-pc">
           <a href="#">HOME</a>
           <a href="#">SERVICE</a>
