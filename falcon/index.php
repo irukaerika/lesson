@@ -12,13 +12,13 @@
       <div>FALCON</div>
     </a>
     <nav id="nav-pc">
-      <a href="#">HOME</a>
-      <a href="#">SERVICE</a>
-      <a href="#">STOCK LIST</a>
-      <a href="#">NEWS</a>
-      <a href="#">BLOG</a>
-      <a href="#">SHOP</a>
-      <a href="#">DOWNLOAD</a>
+      <a href="<?php echo home_url(); ?>">HOME</a>
+      <a href="<?php echo home_url(); ?>/category/service">SERVICE</a>
+      <a href="<?php echo home_url(); ?>/category/stock_list">STOCK LIST</a>
+      <a href="<?php echo home_url(); ?>/category/news">NEWS</a>
+      <a href="<?php echo home_url(); ?>/category/blog">BLOG</a>
+      <a href="<?php echo home_url(); ?>/category/shop">SHOP</a>
+      <a href="<?php echo home_url(); ?>/category/download">DOWNLOAD</a>
     </nav>
       <a href="#">検索マーク</a>
   </header>
