@@ -1,5 +1,28 @@
-  <?php get_header();?>
-  <video src="<?php get_template_directory_uri(); ?>/video/falcon.mp4" autoplay muted loop playsinline width="100%">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header id="flexBox" class="header">
+    <a href="index.html">
+      <div>FALCON</div>
+    </a>
+    <nav id="nav-pc">
+      <a href="#">HOME</a>
+      <a href="#">SERVICE</a>
+      <a href="#">STOCK LIST</a>
+      <a href="#">NEWS</a>
+      <a href="#">BLOG</a>
+      <a href="#">SHOP</a>
+      <a href="#">DOWNLOAD</a>
+    </nav>
+      <a href="#">検索マーク</a>
+  </header>
+  <video src="../../video/falcon.mp4" autoplay muted loop playsinline width="100%">
   </video>
   <article class="video_bottom_bar">
       <time>2021.06.15</time> 
@@ -7,19 +30,22 @@
   </article>
   <section class="carousel">
     <ul class="carousel-area">
-      <li class="carousel-list"><img class="carousel-img" src="<?php get_template_directory_uri(); ?>images/s_4.jpg" alt="ハムスターの画像"></li>
-      <li class="carousel-list"><img class="carousel-img" src="<?php get_template_directory_uri(); ?>/images/s_5.jpg" alt="羊の画像"></li>
-      <li class="carousel-list"><img class="carousel-img" src="<?php get_template_directory_uri(); ?>/images/s_1.jpg" alt="亀の画像"></li>
-      <li class="carousel-list"><img class="carousel-img" src="<?php get_template_directory_uri(); ?>/images/s_2.jpg" alt="鳥の画像"></li>
-      <li class="carousel-list"><img class="carousel-img" src="<?php get_template_directory_uri(); ?>/images/s_3.jpg" alt="ライオンの画像"></li>
+      <li class="carousel-list">
+        <img class="carousel-img" src="../../images/s_4.jpg" alt="">
+        <div class="box"></div>
+      </li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_5.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_1.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_2.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_3.jpg" alt=""></li>
     </ul>
-    <!-- <div class="carousel">
-      <div class="d-demo__item"><img class="slide slide1"  src="../../images/s_4.jpg" alt=""></div>
-      <div class="d-demo__item"><img class="slide slide2"  src="../../images/s_5.jpg" alt=""></div>
-      <div class="d-demo__item"><img class="slide slide3"  src="../../images/s_1.jpg" alt=""></div>
-      <div class="d-demo__item"><img class="slide slide4"  src="../../images/s_2.jpg" alt=""></div>
-      <div class="d-demo__item"><img class="slide slide4"  src="../../images/s_3.jpg" alt=""></div>
-    </div> -->
+    <!-- <ul class="carousel-area">
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_4.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_5.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_1.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_2.jpg" alt=""></li>
+      <li class="carousel-list"><img class="carousel-img" src="../../images/s_3.jpg" alt=""></li>
+    </ul> -->
     <div class="arow-wrap">
       <div class="arrow-left">
         <button class="arrow-btn js-btn-back" type="button"></button>
@@ -52,12 +78,12 @@
             実際に目で見て、試乗してみてくだ<br>さい。現行車とは異なるクラシックカーの魅<br>力を存分に感じていただけると思います。
           </p>
         </div>
-        <img src="<?php get_template_directory_uri(); ?>/images/top_block1.jpg" alt="">
+        <img src="images/top_block1.jpg" alt="">
       </div>
       <div class="exhibition_second">
-        <img src="<?php get_template_directory_uri(); ?>/images/top_block2.jpg" alt="">
-        <img src="<?php get_template_directory_uri(); ?>/images/top_block3.jpg" alt="">
-        <img src="<?php get_template_directory_uri(); ?>/images/top_block4.jpg" alt="">
+        <img src="images/top_block2.jpg" alt="">
+        <img src="images/top_block3.jpg" alt="">
+        <img src="images/top_block4.jpg" alt="">
       </div>
       <a class="shop_button" href="#" >SHOP</a>
     </div>
@@ -71,19 +97,46 @@
   </section>
   <section class="big_stock_list">
     <div class="flex_carList_first carList">
-      <a href=""><img src="<?php get_template_directory_uri(); ?>images/beetle-1.jpg" alt=""></a>
-      <a href=""><img src="<?php get_template_directory_uri(); ?>/images/austin-green-1.jpg" alt=""></a>
-      <a href=""><img src="<?php get_template_directory_uri(); ?>/images/mk2-1-752x468.jpg" alt=""></a>
+      <a href="">
+        <img src="../../images/beetle-1.jpg" alt="">
+        <div class="car_name"><p>Volkswagen Beetle</p></div>
+      </a>
+      <a href="">
+        <img src="../../images/austin-green-1.jpg" alt="">
+        <div class="car_name"><p>Austin-Healey 3000 MkⅢ</p></div>
+      </a>
+      <a href="">
+        <img src="../../images/mk2-1-752x468.jpg" alt="">
+        <div class="car_name"><p>Jaguar Mk2</p></div>
+      </a>
     </div>
     <div class="flex_carList_second carList">
-      <a href=""><img src="<?php get_template_directory_uri(); ?>/images/falcon-1-752x468.jpg" alt=""></a>
-      <a href=""><img src="<?php get_template_directory_uri(); ?>/images/s2-1.jpg" alt=""></a>
-      <a href=""><img src="<?php get_template_directory_uri(); ?>/images/ontinental-1947-1-752x468.jpg" alt=""></a>
+      <a href="">
+        <img src="../../images/falcon-1-752x468.jpg" alt="">
+        <div class="car_name"><p>Ford Falcon</p></div>
+      </a>
+      <a href="">
+        <img src="../../images/s2-1.jpg" alt="">
+        <div class="car_name"><p>Bentley S2</p></div>
+      </a>
+      <a href="">
+        <img src="../../images/ontinental-1947-1-752x468.jpg" alt="">
+        <div class="car_name"><p>Lincoln Continental 1947</p></div>
+      </a>
     </div>
     <div class="flex_carList_third carList">
-      <a href=""><img src="<?php get_template_directory_uri(); ?>/images/mark-v-1.jpg" alt=""></a>
-      <a href=""><img src="<?php get_template_directory_uri(); ?>/images/600-1-752x468.jpg" alt=""></a>
-      <a href=""><img src="<?php get_template_directory_uri(); ?>/images/190sl-1-752x468.jpg" alt=""></a>
+      <a href="">
+        <img src="../../images/mark-v-1.jpg" alt="">
+        <div class="car_name"><p>Lincoln Mark V</p></div>
+      </a>
+      <a href="">
+        <img src="../../images/600-1-752x468.jpg" alt="">
+        <div class="car_name"><p>Mercedes-Benz 600</p></div>
+      </a>
+      <a href="">
+        <img src="../../images/190sl-1-752x468.jpg" alt="">
+        <div class="car_name"><p>Mercedes-Benz 190SL</p></div>
+      </a>
     </div>
     <div class="button">
       <a href="#">STOCK LIST</a>
@@ -119,7 +172,7 @@
           <!-- <a href="#"></a>
           <a href="#"></a>
           <a href="#"></a> -->
-          <a href="#"><img src="<?php get_template_directory_uri(); ?>/images/blog_news-41-752x468.jpg" alt=""></a>
+          <a href="#"><img src="../../images/blog_news-41-752x468.jpg" alt=""></a>
           <a href="#"><img src="../../images/blog_news-34-752x468.jpg" alt=""></a>
           <a href="#"><img src="../../images/blog_news-35-752x468.jpg" alt=""></a>
         </div>
@@ -142,12 +195,15 @@
     <section class="footer_1">
       <a href="#" class="flex_grow">
         <img src="images/footer_1.jpg" alt="">
-        <p>STOCK LIST</p>
-        <p>在庫リスト</p>
+        <div class="footer_content">
+          <p>STOCK LIST</p>
+          <p>在庫リスト</p>
+        </div>
+
       </a>
       <a href="#" class="flex_grow">
         <img src="images/footer_2.jpg" alt="">
-        <div>
+        <div class="footer_content">
           <p>SERVICE</p>
           <p>サービス</p>
         </div>
@@ -155,8 +211,10 @@
       </a>
       <a href="#" class="flex_grow">
         <img src="images/footer_3.jpg" alt="">
-        <p>CONTACT</p>
-        <p>お問い合わせ・お見積り</p>
+        <div class="footer_content">
+          <p>CONTACT</p>
+          <p>お問い合わせ・お見積り</p>
+        </div>
       </a>
     </section>
     <section class="info">
@@ -180,4 +238,27 @@
         <a href="#"><img src="sns/rss.png"></a>
       </div>
     </section>
-      <?php get_footer();?>
+      <div class="footer_nav" id="flexBox">
+        <nav id="nav-pc">
+          <a href="#">HOME</a>
+          <a href="#">SERVICE</a>
+          <a href="#">STOCK LIST</a>
+          <a href="#">NEWS</a>
+          <a href="#">BLOG</a>
+          <a href="#">SHOP</a>
+          <a href="#">DOWNLOAD</a>
+        </nav>
+      <div class="copyrght">
+        <p>©️ 2021 Design Plus Inc.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="js/carousel.js"></script>
+</body>
+</html>
